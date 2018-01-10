@@ -11,8 +11,10 @@ namespace SwitchExmple
         static void Main(string[] args)
         {
             Console.WriteLine("Enter day number (1 for Mon -7 for Sun)");
+            //int.Parse(Console.ReadLine()) it means you are converting user input value(which is a string) in to a integer.
            int daynumber = int.Parse(Console.ReadLine());
-            //daynumber=5
+            //when  number is chosen it wil lead to a day, numbers 1-7 are associated with a daynumber
+            //chosing a number besides the ones specified will lead to the default case being used
 
             switch (daynumber)
             {
@@ -54,9 +56,11 @@ namespace SwitchExmple
                 default:
                     {
                         Console.WriteLine("Invalid Input.Try Again.");
+                        break;
                     }
                     
             }
+            //below there is a readline don't forget to add this!
             Console.ReadLine();
         }
     }
