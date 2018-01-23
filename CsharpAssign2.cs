@@ -27,7 +27,7 @@ namespace CsharpAssign2
             switch (opt)
             {
                 case 1:
-                    Console.WriteLine("The Addition of {0} and {1} is: {2}.", num1, num2, num1 + num2);
+                    Console.WriteLine("The Addition of {0} and {1} is: {2}.", num1, num2, add(num1, num2));
                     break;
                 case 2:
                     Console.WriteLine("The Subtraction of {0} and {1} is: {2}.", num1, num2, num1 - num2);
@@ -46,7 +46,13 @@ namespace CsharpAssign2
                     break;
              
             }
+           
             Console.ReadLine();
+        }
+
+        static int add(int num1, int num2)
+        {
+            return num1 + num2;
         }
     }
 }
