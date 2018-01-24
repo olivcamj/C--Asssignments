@@ -30,13 +30,13 @@ namespace CsharpAssign2
                     Console.WriteLine("The Addition of {0} and {1} is: {2}.", num1, num2, add(num1, num2));
                     break;
                 case 2:
-                    Console.WriteLine("The Subtraction of {0} and {1} is: {2}.", num1, num2, num1 - num2);
+                    Console.WriteLine("The Subtraction of {0} and {1} is: {2}.", num1, num2, subtract(num1,num2));
                     break;
                 case 3:
-                    Console.WriteLine("The Multiplication of {0} and {1} is: {2}.", num1, num2, num1 * num2);
+                    Console.WriteLine("The Multiplication of {0} and {1} is: {2}.", num1, num2, multiply(num1,num2));
                     break;
                 case 4:
-                    Console.WriteLine("The Division of {0} and {1} is: {2}.", num1, num2, num1 / num2);
+                    Console.WriteLine("The Division of {0} and {1} is: {2}.", num1, num2, divide(num1, num2));
                     break;
                 case 5:
                     Console.WriteLine("Exit");
@@ -53,6 +53,18 @@ namespace CsharpAssign2
         static int add(int num1, int num2)
         {
             return num1 + num2;
+        }
+        static int subtract(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+        static int multiply(int num1, int num2)
+        {
+            return num1 * num2;
+        }
+        static int divide(int num1, int num2)
+        {
+            return num1 / num2;
         }
     }
 }
